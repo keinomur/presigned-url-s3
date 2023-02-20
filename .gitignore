@@ -1,3 +1,5 @@
+**/*.pem
+terraform/credentials.tfvars
 # Local .terraform directories
 **/.terraform/*
 
