@@ -27,6 +27,12 @@ Pre-signed URLはURLを発行したプリンシパルでアクセス制御され
 
 ※ S3でバケットポリシー（リソースベースポリシー）はアイデンティティベースポリシーと `OR` で評価されるため、誤った設定を入れるとアクセス制御が適切に機能しなくなる。
 
+### 確認手順
+1. ssh to ec2
+1. create pre-signed url
+1. curl pre-signed url from ec2 -> Access allowed
+1. curl pre-signed url from a different location than the ec2 -> Access denied
+
 ## 雑メモ
 
 - 署名付きURLが発行可能な認証情報は下記3つ
